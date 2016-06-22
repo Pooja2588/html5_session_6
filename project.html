@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Project Timelines</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<style>
+
+		textarea:focus, input:focus{
+			outline: 0;
+		}
+
+		input:focus:invalid,
+		textarea:focus:invalid{
+			border:1px solid #F5192F;
+			box-shadow:0 0 4px #F5192F;
+		}
+
+		input:focus:valid,
+		textarea:focus:valid{
+			border: 1px solid #64C364;
+			box-shadow: 0 0 4px #64C364;
+		}
+		
+		form { max-width: 500px;}
+	</style>
+
+</head>
+
+<body>
+
+	<nav>
+		<a href="home.html">Home</a>.
+		<a href="login.html">Login</a>.
+		<a class="active" href="project.html">Project</a>
+	</nav>
+
+	<form action="">
+		<div class="form-title-row">
+			<h1>Project Timelines</h1>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Name</span>
+				<input type="text" name="name" required>
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Email</span>
+				<input type="email" name="email" required pattern="^\S+@\S+\.\S+$" title="example@mail.com">
+			</label>
+		</div>
+
+		<div class="form-row">
+			<label>
+				<span>Password</span>
+				<input type="password" name="password" required pattern="^(?=.*\d)[0-9a-zA-Z]{6,}$" title="Your password should be a minimum of 6 character long and must contain at least one number">
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Url</span>
+				<input type="url" name="url" required pattern="http://.+" title="Your url should start with http://">
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Project Completion Date (DD-MM-YYYY)</span>
+				<input type="text" name="date" required pattern="(0[1-9]|1[0-9]|2[0-9]|3[01])-(0[1-9]|1[012])-[0-9]{4}" title="Please enter project completion date in DD-MM-YYYY format only">
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Current Month</span>
+				<input type="month" name="month" required>
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Current Week</span>
+				<input type="week" name="week" required>
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Current Time</span>
+				<input type="time" name="time" required>
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Color</span>
+				<input type="color" name="color" required>
+			</label>
+		</div>
+		
+		
+		<div class="form-row">
+			<label>
+				<span>Age</span>
+				<input type="number" name="age" min="18" required>
+			</label>
+		</div>
+		
+		<div class="form-row">
+			<label>
+				<span>Hobbies</span>
+				<input type="text" list="hobbies" name="hobbies" required />
+				<datalist id="hobbies">
+					<option value="Cricket"> Cricket </option>
+					<option value="Movies"> Movies </option>
+					<option value="Football"> Football </option>
+					<option value="Games"> Games </option>
+					<option value="Others"> Others </option>
+				</datalist>
+
+			</label>
+		</div>
+
+		<div class="form-row">
+			<button type="submit">Submit</button>
+		</div>
+
+		
+
+	</form>
+
+</body>
+
+</html>

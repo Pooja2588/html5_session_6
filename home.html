@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Home Page</title>
+
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<style>
+		
+		html{
+			background-color: #F6FBFE;
+		}
+
+		textarea:focus, input:focus{
+			outline: 0;
+		}
+
+		input:focus:invalid,
+		textarea:focus:invalid{
+			border:1px solid #F5192F;
+			box-shadow:0 0 4px #F5192F;
+		}
+
+		input:focus:valid,
+		textarea:focus:valid{
+			border: 1px solid #64C364;
+			box-shadow: 0 0 4px #64C364;
+		}
+
+	</style>
+
+</head>
+<body>
+
+	<nav>
+		<a class="active" href="home.html">Home</a>.
+		<a href="login.html">Login</a>.
+		<a href="project.html">Project</a>
+	</nav>
+
+	<form class="form" id="form1" method="post" style=" box-sizing: 0; box-shadow: none; font: normal 14px sans-serif; background-color:  #F6FBFE;" ></style>
+	
+		
+	<h2>Enter the system</h2>
+	<h3>It is necessary to login in your account in order to sign up for a course.</h3>
+	<br/>
+	<div class="div1">
+		<span class="span1">ARE YOU NEW?<span class="span2"> REGISTER</span></span>
+
+		<div class="form-row">
+				<input type="text" name="name" placeholder="User name" required maxlength="20">
+		</div>
+		
+		<div class="form-row">
+				<input type="email" name="email" placeholder="Email" maxlength="30" required pattern="^\S+@\S+\.\S+$" title="example@mail.com">
+		</div>
+		
+		<div class="form-row">
+				<input type="password" name="password" required placeholder="Password" pattern="^(?=.*\d)[0-9a-zA-Z]{6,}$" title="Your password should be a minimum of 6 character long and must contain at least one number">
+		</div>
+		
+		<div class="form-row">
+				<input type="password" name="confirm_password" required placeholder=" Confirm Password" title="Password does not match!">
+		</div>
+		    <br><br>
+            <button type="submit"style="color:#2C4771;font-weight:bold; float:right; margin-right:120px; border: 3px solid #2C4771;" >Submit </style></button>
+            <br><br>
+	</div>
+</form>
+<form class="form" id="form2" method="post" style=" box-sizing: 0; box-shadow: none; font: normal 14px sans-serif; background-color:  #F6FBFE;"></style>
+	<div class="div2">
+		<span class="span3">ALREADY A STUDENT?<span class="span4">  LOGIN</span></span>
+            <div class="form-row">
+				<input type="text" name="name" placeholder="User name" required maxlength="20">
+			</div>
+            <div class="form-row">
+				<input type="password" name="password" required placeholder="Password">
+			</div>
+			<div class="form-row">
+				<input type="checkbox" name="remember" value="yes"><span class="checkbox">Remember me?</span>
+			
+				<button type="submit" value="Login" style="border: 2px solid orange; background-color: #2C4771; color:#FFFFFF; float:right; font-size:15px; text-align:center;">Login</style></button>
+			</div>
+			<br/>
+            <div class="form-row">
+				<span class="span4" style=" color: #FFFFFF; text-decoration:underline; float:right;margin-right:-100px;">Forgot Password?</style></span4>
+			</div>
+            
+	</div>
+</form>
+
+
+</form>
+</body>
+</html>
